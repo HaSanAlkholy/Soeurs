@@ -1207,10 +1207,18 @@ header .swiper-container .swiper-slide:hover img {
 #products .s-container .product .product-img {
   text-align: center;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 #products .s-container .product .product-img img {
   width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#products .s-container .product .product-img:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media (max-width: 576px) {
@@ -1226,6 +1234,12 @@ header .swiper-container .swiper-slide:hover img {
 
 #products .s-container .product .product-disc h5 a {
   color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#products .s-container .product .product-disc h5 a:hover {
+  color: #ff3333;
 }
 
 #products .s-container .product .product-disc .price {
@@ -1682,6 +1696,8 @@ footer .footer-top .footer-social .body .social-item {
 footer .footer-top .footer-social .body .social-item a {
   font-size: 23px;
   color: #4d4d4d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 footer .footer-top .footer-social .body .social-item a:hover {
