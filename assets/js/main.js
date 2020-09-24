@@ -108,9 +108,14 @@ $(window).on('load', function () {
 
   });
 
-  setInterval(() => {
-    mySwiper3.slideNext();
-  }, 4000)
+  if (window.innerWidth <= 992) {
+    setInterval(() => {
+      mySwiper3.slideNext();
+    }, 4000);
+  }
+
+
+
 
 
   // animate on scroll
@@ -168,7 +173,7 @@ $(window).on('load', function () {
     if (window.innerWidth <= 576) {
       $('.footer-list').attr("data-toggle", "collapse");
       $('.footer-list ul').addClass('collapse');
-    }else{
+    } else {
       $('.footer-list').attr("data-toggle", "none");
       $('.footer-list ul').removeClass('collapse');
       $('.footer-list ul').css('height', 'auto');
@@ -182,7 +187,7 @@ $(window).on('load', function () {
 
   $(".footer-list").on("click", function (e) {
     if (window.innerWidth <= 576) {
-      $(this).addClass("footer-list-active");
+      $(this).toggleClass("footer-list-active");
     }
   });
 
