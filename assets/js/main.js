@@ -72,7 +72,7 @@ $(window).on('load', function () {
   });
 
   //notes slider
-  var mySwiper = new Swiper('.notes-swiper-container', {
+  var mySwiper3 = new Swiper('.notes-swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -96,6 +96,8 @@ $(window).on('load', function () {
       // when window width is >= 250px
       0: {
         slidesPerView: 1,
+        allowTouchMove: true,
+        autoplay: 4000,
       }
     },
 
@@ -105,6 +107,11 @@ $(window).on('load', function () {
     },
 
   });
+
+  setInterval( () =>{
+    mySwiper3.slideNext();
+  }, 4000 )
+
 
   // animate on scroll
 

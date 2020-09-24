@@ -232,7 +232,7 @@ html[dir="ltr"] .slide ul {
   height: 1px;
   width: 1px;
   border-radius: 100%;
-  background-color: #f0d6a3;
+  background-color: #ff3333be;
   margin: 0 10px;
   opacity: 0;
   position: absolute;
@@ -564,6 +564,8 @@ nav .nav-bottom .nav-icons .user .dropdown-content > div a {
   font-weight: 500;
   color: #8c8c8c;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 nav .nav-bottom .nav-icons .user .dropdown-content > div:hover a {
