@@ -161,7 +161,6 @@ $(window).on('load', function () {
 
   $(".slide").on("click", function (e) {
     if (e.target.classList.contains('drop')) {
-      console.log(e.target);
       $(this).toggleClass("slide-active");
       $(this).children("ul").slideToggle();
     }
