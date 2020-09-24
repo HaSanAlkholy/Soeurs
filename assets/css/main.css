@@ -1610,6 +1610,12 @@ footer .footer-top li a:hover {
   color: white;
 }
 
+footer .footer-top .account,
+footer .footer-top .info {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 @media (max-width: 992px) {
   footer .footer-top .account,
   footer .footer-top .info {
@@ -1641,10 +1647,12 @@ footer .footer-top li a:hover {
   }
   footer .footer-top .account ul,
   footer .footer-top .info ul {
-    display: none;
     text-align: start;
-    margin-bottom: 30px;
   }
+}
+
+footer .footer-top .footer-list-active {
+  margin-bottom: 20px;
 }
 
 footer .footer-top .footer-list-active .head h4 {

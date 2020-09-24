@@ -108,9 +108,9 @@ $(window).on('load', function () {
 
   });
 
-  setInterval( () =>{
+  setInterval(() => {
     mySwiper3.slideNext();
-  }, 4000 )
+  }, 4000)
 
 
   // animate on scroll
@@ -161,12 +161,32 @@ $(window).on('load', function () {
       $(this).children("ul").slideToggle();
     }
   });
+
+
+  function addCollapse() {
+    console.log('resize');
+    if (window.innerWidth <= 576) {
+      $('.footer-list').attr("data-toggle", "collapse");
+      $('.footer-list ul').addClass('collapse');
+    }else{
+      $('.footer-list').attr("data-toggle", "none");
+      $('.footer-list ul').removeClass('collapse');
+      $('.footer-list ul').css('height', 'auto');
+    }
+  }
+
+
+  addCollapse();
+  window.addEventListener("resize", addCollapse);
+
+
   $(".footer-list").on("click", function (e) {
-    if (window.innerWidth <= 768) {
-      $(this).toggleClass("footer-list-active");
-      $(this).children("ul").slideToggle();
+    if (window.innerWidth <= 576) {
+      $(this).addClass("footer-list-active");
     }
   });
+
+
 
   window.addEventListener("scroll", scrolled);
 
