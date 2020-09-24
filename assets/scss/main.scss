@@ -892,6 +892,11 @@ header {
             font-size: 15px;
             font-weight: 400;
             transition: all 0.5s;
+            height:100%;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &:hover {
             background-color: transparent;
