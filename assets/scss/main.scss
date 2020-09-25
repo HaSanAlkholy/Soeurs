@@ -1123,6 +1123,7 @@ footer {
                 transition: all 0.5s;
                 span {
                     font-size: 14px;
+                    transition: all 0.5s;
                     display: none;
 
                     @media (max-width: 576px) {
@@ -1176,6 +1177,10 @@ footer {
             .head {
                 h4 {
                     color: white;
+
+                    span{
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }
