@@ -99,11 +99,11 @@ nav {
     }
 
     .nav-bottom {
-        padding: 40px 0;
+        padding: 25px 0;
         transition: all 0.5s;
 
         @media (max-width: 1200px) {
-            padding: 30px 0;
+            padding: 20px 0;
         }
         @media (max-width: 576px) {
             padding: 10px 0;
@@ -344,6 +344,7 @@ nav {
 
 .nav-scrolled {
     box-shadow: 0px 0px 10px 0px #00000017;
+    z-index: 990;
 
     .nav-bottom {
         .nav-logo {
@@ -458,10 +459,10 @@ nav {
 }
 
 header {
-    margin-top: 183px;
+    margin-top: 153px;
 
     @media (max-width: 1200px) {
-        margin-top: 120px;
+        margin-top: 105px;
     }
     @media (max-width: 768px) {
         margin-top: 90px;

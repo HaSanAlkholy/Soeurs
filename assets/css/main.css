@@ -341,14 +341,14 @@ nav .row > div {
 }
 
 nav .nav-bottom {
-  padding: 40px 0;
+  padding: 25px 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 @media (max-width: 1200px) {
   nav .nav-bottom {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 
@@ -645,6 +645,7 @@ nav .nav-bottom .menu:hover {
 .nav-scrolled {
   -webkit-box-shadow: 0px 0px 10px 0px #00000017;
           box-shadow: 0px 0px 10px 0px #00000017;
+  z-index: 990;
 }
 
 .nav-scrolled .nav-bottom .nav-logo img {
@@ -797,12 +798,12 @@ nav .nav-bottom .menu:hover {
 }
 
 header {
-  margin-top: 183px;
+  margin-top: 153px;
 }
 
 @media (max-width: 1200px) {
   header {
-    margin-top: 120px;
+    margin-top: 105px;
   }
 }
 
