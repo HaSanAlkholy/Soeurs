@@ -1759,6 +1759,12 @@ footer .footer-top .footer-social .body .social-item a:hover {
   color: white;
 }
 
+@media (max-width: 576px) {
+  footer .footer-top .footer-social .body .social-item a {
+    color: white;
+  }
+}
+
 footer .footer-top .mail {
   width: 450px;
   max-width: 100%;
